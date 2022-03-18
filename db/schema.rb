@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2022_03_18_133938) do
   end
 
   create_table "signups", force: :cascade do |t|
-    t.string "time"
+    t.integer "time"
     t.integer "activity_id", null: false
     t.integer "camper_id", null: false
     t.datetime "created_at", precision: 6, null: false
